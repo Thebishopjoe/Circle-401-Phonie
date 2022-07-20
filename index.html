@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Phonie</title>
 
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
 
     <form action="" method="post">
         <div>
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" class="first_name" required>
+
+            <i class="fa fa-user fa-2x"></i>
+            <input type="text" name="first_name" class="first_name" placeholder="First Name" required>
         </div>
 
         <div>
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" class="last_name" required>
+            <i class="fa fa-user fa-2x"></i>
+            <input type="text" name="last_name" class="last_name" placeholder="Last Name" required>
         </div>
         <div>
-            <label for="email">Email Address</label>
+            <i class="fa fa-envelope-square fa-2x"></i>
             <input type="email" name="email" class="email" placeholder="your-email@example.com" required>
         </div>
-
         <div>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" pattern = class="phone" required>
-        </div>
-        <div>
-            <label for="gender">Gender</label>
+            <i class="fa fa-intersex fa-2x"></i>
             <select name="gender" id="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
-                <option value="not_to_say">Prefer Not To Say</option>
+                <option value="others">Others</option>
             </select>
         </div>
         <div>
-            <label for="country">Country</label>
+            <i class="fa fa-flag fa-2x"></i>
             <select id="country" name="country">
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -291,24 +290,31 @@
         </div>
 
         <div>
-            <label for="state">State/Province</label>
-            <input type="text" name="state" class="state" required>
+            <i class="fa fa-mobile fa-2x"></i>
+            <input type="tel" name="phone" class="phone" pattern="[0-9]{11}" placeholder="Phone Number" required>
         </div>
 
         <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" minlength="6" class="username" required>
+            <i class="fa fa-location-arrow fa-2x"></i>
+            <input type="text" name="state" class="state" placeholder="State/Province" required>
         </div>
 
         <div>
-            <label for="password">Password</label>
+            <i class="fa fa-user-o fa-2x"></i>
+            <input type="text" name="username" minlength="6" class="username" placeholder="Username" required>
+        </div>
+
+        <div>
+            <i class="fa fa-lock fa-2x"></i>
             <input type="password" placeholder="Input Password" class="password" required>
         </div>
         <div>
-            <label for="password">Confirm Password</label>
+            <i class="fa fa-eye fa-2x"></i>
             <input type="password" placeholder="Confirm Password" class="password" required>
         </div>
 
+
+        <button type="submit">Submit</button>
 
 
     </form>
@@ -318,4 +324,5 @@
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
