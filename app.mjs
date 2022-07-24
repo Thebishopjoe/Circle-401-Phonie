@@ -4,13 +4,25 @@ function startApp() {
     // so create and use/call additional functions from here
   
     // pls remove the below and make some magic in here!
-    console.log('make magic in here!');
+
+
+  // Modal Functionalities
+  const popupContainer = document.querySelector('.popup-wrapper')
+  const popupClose = document.querySelector('.popup-close')
+
+  window.addEventListener('load', () => {
+      popupContainer.style.visibility = 'visible'
+  })
+
+  popupClose.addEventListener('click', () => {
+      popupContainer.style.visibility = 'hidden'
+  })
+
+  popupContainer.addEventListener('click', () => {
+      popupContainer.style.visibility = 'hidden'
+  })
   
-    const header = document.querySelector('h2');
-    if(header) {
-      header.textContent = 'make some magic here!!';
-    }
-  };
+};
   
   // ======= DO NOT EDIT ============== //
   export default startApp;

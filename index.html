@@ -11,56 +11,82 @@
     <div class="bg-img">
         <div class="content">
             <h1>Sign-up Form</h1>
-            <form action="" method="post">
+            <form action="" method="post" class='form'>
                 <div class="field">
                     <span class="fa fa-user fa-2x"></span>
-                    <input type="text" name="Full_name" class="Full_name" placeholder="Full Name" required>
+                    <input type="text" name="Full_name" class="full_name" placeholder="Full Name">
                 </div>
+
                 <div class="field" >
                     <span class="fa fa-user-o fa-2x"></span>
-                    <input type="text" name="username" minlength="6" class="username" placeholder="Username" required>
+                    <input type="text" name="username" class="username" placeholder="Username">
                 </div>
+
+                <div class="field" >
+                    <span class="fa fa-flag fa-2x"></span>
+                    <select id="country" name="country" class="country">
+                        <option value="">Country</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+                </div>
+
                 <div class="field" >
                     <span class="fa fa-mobile fa-2x"></span>
-                  <input class="country-code" type="text" name="country-code" >
-                    <input type="tel" name="phone" class="phone" pattern="[0-9]{11}" placeholder="Phone Number" required>
+                    <input class="country-code" type="text" name="country-code">
+                    <input type="tel" name="phone" class="phone" placeholder="Phone Number">
                 </div>
+
                 <div class="field">
                     <span class="fa fa-envelope-square fa-2x"></span>
-                    <input type="email" name="email" class="email" placeholder="your-email@example.com" required>
+                    <input type="email" name="email" class="email" placeholder="your-email@example.com">
                 </div>
+
                 <div class="field" >
                     <span class="fa fa-intersex fa-2x"></span>
-                    <select name="gender" id="gender" required>
+                    <select name="gender" id="gender"  class="gender">
                         <option value="">Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="others">still finding myself</option>
                     </select>
                 </div>
-                <div class="field" >
-                    <span class="fa fa-flag fa-2x"></span>
-                    <select id="country" name="country">
-                        <option value="">Country</option>
-                 
-                        <option value="Ghana">Ghana</option>
-                        <option value="Nigeria">Nigeria</option>
-                    </select>
-                </div>
+
                 <div class="field">
                     <span class="fa fa-lock fa-2x"></span>
-                    <input type="password" placeholder="Password" class="password" required>
+                    <input type="password" name="password" placeholder="Password" class="password">
                 </div>
+
                 <div class="field">
                     <span class="fa fa-eye fa-2x"></span>
-                    <input type="password" placeholder="Confirm Password" class="password" required>
-                </div >   
-                <div class="btn">
-                    <a href="#">Submit</a>
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" class="confirm-password">
                 </div>
+
+                <div class="btn">
+                    <button name='button' class="btn-submit">Submit</button>
+                </div>
+
             </form>
+
         </div>
     </div>
+
+    <!-- Popup Modal Area -->
+    <div class="popup-wrapper">
+
+        <div class="pop-up">
+            <div class="popup-close">X</div>
+            <div class="popup-content">
+                <h3>PHONIE</h3>
+                <p>This is a web-app that shows the network image you use by simply putting in the first three digits of your number after your country's dialing code.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
     <script src="index.mjs" type="module"></script>
+
 </body>
 </html>
