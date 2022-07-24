@@ -6,7 +6,7 @@
     }
 
     .bg-img{
-        background: url(./work\ image.jpg);
+        background: url(./work\image.jpg);
         height: 100vh;
         background-size: cover;
         background-position: center;
@@ -115,3 +115,111 @@
         color: aquamarine;
         cursor: pointer;
     }
+
+/*SECOND CSS STYLE WITH PINK AND BLUE style starts here  */
+
+/* @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .bg-img{       
+        height: 100vh;       
+    }
+
+    .bg-img::after{
+        position: absolute;
+        content: '';
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .content{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 550px;
+        text-align: center;
+        z-index: 999;
+        padding: 40px;
+        background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    }
+
+    h1{
+        margin-bottom: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 250%;
+        font-family: 'Playfair Display', serif;
+        color: #3e403f;
+    }
+
+    .field{
+        position: relative;
+        height: 35px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        border-radius: 100%;
+    }
+
+    .field input{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        font-family: 'Abel', sans-serif;
+        color: #5E6472;
+        outline: none;
+        border: none;
+        font-size: 16px;
+
+    }
+
+    .field select{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        font-family: 'Abel', sans-serif;
+        color: #5E6472;
+        outline: none;
+        border: none;
+        font-size: 16px;
+
+    }
+
+    .btn-submit{
+        background: #B8F2E6;
+        color: #252537;
+        width: 280px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.05em;
+    }
+
+    .btn-submit:active{
+        background: #fff;
+    }
+
+    .btn-submit:hover{
+        background:#fed6e3;
+    }
+ */
